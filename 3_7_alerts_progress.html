@@ -148,33 +148,49 @@
       <!--####################START HERE######################-->
 
       <!-- ALERTS -->
-      <div><strong>Primary</strong> Blog post added</div>
+      <div class="alert alert-primary">
+        <strong>Primary</strong> Blog post added
+      </div>
 
-      <div><strong>Secondary</strong> Blog post added</div>
+      <div class="alert alert-secondary">
+        <strong>Secondary</strong> Blog post added
+      </div>
 
-      <div><strong>Success</strong> Blog post added</div>
+      <div class="alert alert-success">
+        <strong>Success</strong> Blog post added
+      </div>
 
-      <div><strong>Danger</strong> Please check the log files</div>
+      <div class="alert alert-danger">
+        <strong>Danger</strong> Please check the log files
+      </div>
 
-      <div><strong>Info</strong> You have a new message</div>
+      <div class="alert alert-info">
+        <strong>Info</strong> You have a new message
+      </div>
 
-      <div><strong>Warning</strong> Please check the log files</div>
+      <div class="alert alert-warning">
+        <strong>Warning</strong> Please check the log files
+      </div>
 
-      <div><strong>Light</strong> Please check the log files</div>
+      <div class="alert alert-light">
+        <strong>Light</strong> Please check the log files
+      </div>
 
-      <div><strong>Dark</strong> Please check the log files</div>
+      <div class="alert alert-dark">
+        <strong>Dark</strong> Please check the log files
+      </div>
 
       <!-- DISMISSABLE ALERT -->
-      <div>
-        <button type="button">
+      <div class="alert alert-success alert-dismissible">
+        <button class="close" type="button" data-dismiss="alert">
           <span>&times;</span>
         </button>
         <strong>Dismissable</strong> Blog post added
       </div>
 
       <!-- EXTRA CONTENT -->
-      <div>
-        <h4>Congrats!</h4>
+      <div class="alert alert-success">
+        <h4 class="alert-heading">Congrats!</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
           dignissimos eius, sit quo assumenda totam commodi ipsum saepe
@@ -182,7 +198,7 @@
           non, harum ab quam? Cumque
         </p>
         <hr />
-        <p>
+        <p class="mb-0">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, odio?
         </p>
       </div>
@@ -191,46 +207,71 @@
       <br />
 
       <!-- PROGRESS BARS -->
-      <div>
-        <div></div>
+      <div class="progress">
+        <div class="progress-bar" style="width:50%"></div>
       </div>
       <br />
-      <div>
-        <div></div>
+      <div class="progress">
+        <div class="progress-bar" style="width:50%">35%</div>
       </div>
       <br />
-      <div>
-        <div></div>
+      <div class="progress">
+        <div class="progress-bar bg-success" style="width:30%">35%</div>
       </div>
       <br />
-      <div>
-        <div></div>
+      <div class="progress">
+        <div class="progress-bar bg-info" style="width:75%">75%</div>
       </div>
       <br />
-      <div>
-        <div></div>
+      <div class="progress">
+        <div class="progress-bar bg-warning" style="width:60%">60%</div>
       </div>
       <br />
       <!-- HEIGHT -->
-      <div>
-        <div></div>
+      <div class="progress" style="height: 1px;">
+        <div class="progress-bar bg-danger" style="width:80%"></div>
       </div>
       <br />
       <!-- STRIPED -->
-      <div>
-        <div></div>
+      <div class="progress">
+        <div
+          class="progress-bar bg-danger progress-bar-striped"
+          style="width:80%"
+        >
+          80%
+        </div>
       </div>
       <br />
       <!-- ANIMATED -->
-      <div>
-        <div></div>
+      <div class="progress">
+        <div
+          class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+          style="width:80%"
+        >
+          80%
+        </div>
       </div>
       <br />
       <!-- MULTIPLE BARS -->
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
+      <div class="progress">
+        <div
+          class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+          style="width:67%"
+        >
+          67%
+        </div>
+        <div
+          class="progress-bar bg-sucess progress-bar-striped progress-bar-animated"
+          style="width:34%"
+        >
+          34%
+        </div>
+        <div
+          class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+          style="width:26%"
+        >
+          26%
+        </div>
       </div>
     </div>
     <!-- ./container -->
