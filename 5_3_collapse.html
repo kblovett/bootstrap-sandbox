@@ -147,11 +147,19 @@
       <!--#####################START HERE###################-->
 
       <!-- BUTTON WITH COLLAPSE -->
-      <button>Read More</button>
+      <div class="card mb-5">
+        <div class="card-header">
+          <button
+            class="btn btn-primary mb-4"
+            data-toggle="collapse"
+            data-target="#btn-collapse-1"
+          >
+            Read More
+          </button>
+        </div>
 
-      <div>
-        <div>
-          <div>
+        <div class="collapse" id="btn-collapse-1">
+          <div class="card-body">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eius
             libero quisquam nobis explicabo vel non necessitatibus ipsum
             doloribus cupiditate voluptate recusandae quo autem error debitis,
@@ -161,18 +169,22 @@
       </div>
 
       <!-- ACCORDION -->
-      <div>
-        <div>
-          <div>
+      <div class="accordion">
+        <div class="card">
+          <div class="card-header">
             <h5>
-              <a>
+              <a
+                href="#collapse1"
+                data-parent="#accordion"
+                data-toggle="collapse"
+              >
                 Collapse One
               </a>
             </h5>
           </div>
 
-          <div>
-            <div>
+          <div class="show" id="collapse1">
+            <div class="card-body">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum
               architecto aut, recusandae totam ullam aperiam. Nesciunt expedita
@@ -183,17 +195,21 @@
           </div>
         </div>
 
-        <div>
-          <div>
+        <div class="card">
+          <div class="card-header">
             <h5>
-              <a>
+              <a
+                href="#collapse2"
+                data-parent="#accordion"
+                data-toggle="collapse"
+              >
                 Collapse Two
               </a>
             </h5>
           </div>
 
-          <div>
-            <div>
+          <div class="collapse" id="collapse2">
+            <div class="card-body">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum
               architecto aut, recusandae totam ullam aperiam. Nesciunt expedita
@@ -204,17 +220,21 @@
           </div>
         </div>
 
-        <div>
-          <div>
+        <div class="card">
+          <div class="card-header">
             <h5>
-              <a>
+              <a
+                href="#collapse3"
+                data-parent="accordion"
+                data-toggle="collapse"
+              >
                 Collapse Three
               </a>
             </h5>
           </div>
 
-          <div>
-            <div>
+          <div class="collapse" id="collapse3">
+            <div class="card-body">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum
               architecto aut, recusandae totam ullam aperiam. Nesciunt expedita
