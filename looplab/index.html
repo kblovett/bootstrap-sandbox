@@ -202,9 +202,9 @@
               Create
             </h1>
             <p class="lead">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum consequatur fuga doloribus eius ullam recusandae
-              officia nesciunt magni qui iste.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              expedita autem eum ut voluptates sint cumque consectetur debitis
+              minus quam.
             </p>
             <a href="#" class="btn btn-outline-light">Find out more</a>
           </div>
@@ -390,13 +390,14 @@
           // Animate smooth scroll
           $('html, body').animate(
             {
-              scrollTop: $(hash).offset().top
-            },
-            900,
-            function() {
-              // Add hash to URL after scroll
-              window.location.hash = hash;
+              scrollTop: $(hash).offset().top - 50
             }
+            // ,
+            // 900,
+            // function() {
+            //   // Add hash to URL after scroll
+            //   window.location.hash = hash;
+            // }
           );
         }
       });
