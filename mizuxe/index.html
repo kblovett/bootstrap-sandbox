@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Mizuxe Book Theme</title>
   </head>
-  <body>
+  <body id="home" data-spy="scroll" data-target="#main-nav">
     <!-- NAVBAR -->
     <nav
       class="navbar navbar-expand-md navbar-light fixed-top py-4"
@@ -96,7 +96,7 @@
           </div>
           <div class="col-md-4">
             <button class="btn btn-primary btn-lg btn-block">
-              <i class="fas fa-envelope-open"></i> Subscribe
+              <i class="fas fa-envelope"></i> Subscribe
             </button>
           </div>
         </div>
@@ -261,7 +261,7 @@
     </section>
 
     <!-- AUTHORS SECTION -->
-    <section id="authors" class="text-center my-5">
+    <section id="authors" class="text-center py-5">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -417,12 +417,102 @@
       </div>
     </section>
 
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <h3>Get in touch</h3>
+            <p class="lead">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque,
+              dolore.
+            </p>
+            <form>
+              <div class="input-group input-group-lg mb-3">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fas fa-user"></i>
+                  </div>
+                </div>
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+              <div class="input-group input-group-lg mb-3">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                </div>
+                <input type="email" class="form-control" placeholder="Email" />
+              </div>
+              <div class="input-group input-group-lg mb-3">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fas fa-pencil-alt"></i>
+                  </div>
+                </div>
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="input-group input-group-lg">
+                <input type="submit" class="btn btn-primary ml-auto" />
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-3 align-self-center">
+            <img src="assets/img/mlogo.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="bg-primary text-white py-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-6 ml-auto">
+            <p class="lead">Copyright &copy;<span id="year"></span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <!-- SCRIPTS -->
     <script src="assets/scripts/jquery-3.4.1.min.js"></script>
     <script src="assets/scripts/bootstrap.bundle.min.js"></script>
     <script>
       // Get the current year for the copyright
       $('#year').text(new Date().getFullYear());
+
+      // Init scrollspy for highlighting section names in the navbar
+      $('body').scrollspy({ target: '#main-nav' });
+
+      // Add smooth scrolling
+      $('#main-nav a').on('click', function(e) {
+        // Check for a hash value
+        if (this.hash !== '') {
+          // Prevent default behavior
+          e.preventDefault();
+
+          // Store hash in a variable
+          const hash = this.hash;
+
+          // Animate smooth scroll
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top - 105
+            }
+            // ,
+            // 900,
+            // function() {
+            //   // Add hash to URL after scroll
+            //   window.location.hash = hash;
+            // }
+          );
+        }
+      });
     </script>
   </body>
 </html>
