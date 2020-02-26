@@ -9,7 +9,8 @@
     <title>Bootstrap Theme</title>
   </head>
   <body>
-    <div class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <!-- NAVBAR -->
+    <nav id="nav-main" class="navbar navbar-expand-sm navbar-dark bg-dark">
       <div class="container">
         <a href="index.html" class="navbar-brand">Glozzom</a>
         <button
@@ -39,7 +40,75 @@
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
+
+    <!-- SHOWCASE CAROUSEL -->
+    <section id="showcase">
+      <div id="showcase-carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li
+            class="active"
+            data-target="#showcase-carousel"
+            data-slide-to="0"
+          ></li>
+          <li data-target="#showcase-carousel" data-slide-to="1"></li>
+          <li data-target="#showcase-carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item carousel-img-1 active">
+            <div class="container">
+              <div class="carousel-caption d-none d-sm-block text-left mb-5">
+                <h1 class="display-3">Heading One</h1>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia, consequatur. Qui, provident maxime? Recusandae soluta
+                  odit, sit consequatur dignissimos hic?
+                </p>
+                <a href="#" class="btn btn-danger btn-lg">Sign up now</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-img-2">
+            <div class="container">
+              <div class="carousel-caption d-none d-sm-block mb-5">
+                <h1 class="display-3">Heading Two</h1>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                  repellendus adipisci ut dolores officiis nobis id reiciendis
+                  saepe ipsa deserunt.
+                </p>
+                <a href="#" class="btn btn-primary btn-lg">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-img-3">
+            <div class="container">
+              <div class="carousel-caption d-none d-sm-block text-right mb-5">
+                <h1 class="display-3">Heading Three</h1>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Sapiente doloribus minima ipsam. Tempora laboriosam velit
+                  perspiciatis sequi quae nam eaque?
+                </p>
+                <a href="#" class="btn btn-success btn-lg">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="#showcase-carousel"
+          class="carousel-control-prev"
+          data-slide="prev"
+          ><span class="carousel-control-prev-icon"></span
+        ></a>
+        <a
+          href="#showcase-carousel"
+          class="carousel-control-next"
+          data-slide="next"
+          ><span class="carousel-control-next-icon"></span
+        ></a>
+      </div>
+    </section>
 
     <!-- BODY END -->
     <script src="assets/scripts/jquery-3.4.1.min.js"></script>
