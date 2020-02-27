@@ -76,3 +76,7 @@ body {
 #faq .card-header,
 #faq .card-body {
   background: #333; }
+
+#main-footer {
+  background: #000;
+  color: #fff; }
