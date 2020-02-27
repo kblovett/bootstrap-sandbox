@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/all.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/ekko-lightbox.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Bootstrap Theme</title>
   </head>
@@ -223,9 +224,142 @@
       </div>
     </div>
 
+    <!-- PHOTO GALLERY SECTION -->
+    <section id="gallery" class="py-5">
+      <div class="container">
+        <h1 class="text-center">Photo Gallery</h1>
+        <p class="text-center">Check out our photos</p>
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <a
+              href="https://source.unsplash.com/random/560x560"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="560"
+              data-width="560"
+              ><img
+                src="https://source.unsplash.com/random/560x560"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://source.unsplash.com/random/561x561"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="560"
+              data-width="560"
+              ><img
+                src="https://source.unsplash.com/random/561x561"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://source.unsplash.com/random/562x562"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="560"
+              data-width="560"
+              ><img
+                src="https://source.unsplash.com/random/562x562"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <a
+              href="https://source.unsplash.com/random/563x563"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="560"
+              data-width="560"
+              ><img
+                src="https://source.unsplash.com/random/563x563"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://source.unsplash.com/random/564x564"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="564"
+              data-width="564"
+              ><img
+                src="https://source.unsplash.com/random/564x564"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://source.unsplash.com/random/565x565"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="560"
+              data-width="560"
+              ><img
+                src="https://source.unsplash.com/random/565x565"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+    <section id="newsletter" class="bg-dark text-white text-center p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Sign up for our newsletter</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, ab
+              magnam. Doloribus, quis. Hic animi natus temporibus. Culpa, dicta!
+              Velit.
+            </p>
+            <form class="form-inline justify-content-center">
+              <input
+                type="text"
+                class="form-control mb-2 mr-2"
+                placeholder="Name"
+              />
+              <input
+                type="email"
+                class="form-control mb-2 mr-2"
+                placeholder="Email"
+              />
+              <button class="btn btn-primary mb-2">
+                <i class="fas fa-envelope-open"></i> Subscribe!
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer id="main-footer" class="text-center p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Copyright &copy;<span id="year"></span> Glozzem</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <!-- BODY END -->
     <script src="assets/scripts/jquery-3.4.1.min.js"></script>
     <script src="assets/scripts/bootstrap.bundle.min.js"></script>
+    <script src="assets/scripts/ekko-lightbox.min.js"></script>
     <script>
       // Get the current year for the copyright
       $('#year').text(new Date().getFullYear());
@@ -250,6 +384,12 @@
             $(theModal + ' iframe').attr('src', videoSRC);
           });
         });
+      });
+
+      // Lightbox init
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
       });
     </script>
   </body>
