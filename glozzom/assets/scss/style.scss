@@ -90,3 +90,17 @@ body {
     margin-top: -50px;
   }
 }
+
+#faq {
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .card {
+    border: #444;
+  }
+  .card-header,
+  .card-body {
+    background: #333;
+  }
+}
