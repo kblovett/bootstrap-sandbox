@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/slick/slick.css" />
+    <link rel="stylesheet" href="assets/slick/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Bootstrap Theme</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav id="nav-main" class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">Glozzom</a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="services.html" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <header id="page-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 m-auto text-center">
+            <h1>About Us</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit,
+              consequuntur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>What we do</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos quo
+              labore doloribus molestiae. Nemo assumenda nisi voluptate maxime
+              sit optio inventore tempora animi. Provident reiciendis fugit,
+              enim eum ab voluptatibus deleniti alias sapiente a et commodi?
+              Suscipit ducimus eum consequatur, voluptas accusantium alias quo
+              nesciunt vero cumque culpa mollitia tenetur!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              doloribus ipsam beatae nemo. Tenetur quo, exercitationem
+              laudantium enim suscipit aspernatur facilis totam delectus rem
+              reprehenderit nisi voluptates cupiditate, nihil praesentium,
+              quidem omnis minima possimus maiores natus? Deserunt sint autem
+              esse ipsa illo iste dolores voluptates odit! Nostrum ullam
+              quisquam iusto?
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="https://source.unsplash.com/random/700x700?technology"
+              alt=""
+              class="img-fluid rounded-circle d-none d-md-block about-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer id="main-footer" class="text-center p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Copyright &copy;<span id="year"></span> Glozzem</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BODY END -->
+    <script src="assets/scripts/jquery-3.4.1.min.js"></script>
+    <script src="assets/scripts/bootstrap.bundle.min.js"></script>
+    <script src="assets/slick/slick.min.js"></script>
+    <script>
+      // Get the current year for the copyright
+      $('#year').text(new Date().getFullYear());
+    </script>
+  </body>
+</html>
