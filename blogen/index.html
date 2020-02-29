@@ -102,7 +102,7 @@
           <div class="col-md-3">
             <a
               href="#"
-              class="btn btn-warning btn-block"
+              class="btn btn-warning text-white btn-block"
               data-toggle="modal"
               data-target="#addUserModal"
               ><i class="fas fa-plus"></i> Add User</a
@@ -111,8 +111,6 @@
         </div>
       </div>
     </section>
-
-    <!-- MODALS -->
 
     <!-- ADD POST MODAL -->
     <div id="addPostModal" class="modal fade">
@@ -195,7 +193,7 @@
     <div id="addUserModal" class="modal fade">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
-          <div class="modal-header bg-warning">
+          <div class="modal-header bg-warning text-white">
             <h5 class="modal-title">Add User</h5>
             <button class="close" data-dismiss="modal">
               <span class="text-white">&times;</span>
@@ -222,7 +220,7 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button class="btn btn-warning" data-dismiss="modal">
+            <button class="btn btn-warning text-white" data-dismiss="modal">
               Save Changes
             </button>
           </div>
@@ -230,8 +228,140 @@
       </div>
     </div>
 
+    <section id="posts">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="card">
+              <div class="card-header">
+                <h4>Latest Posts</h4>
+              </div>
+              <table class="table table-striped">
+                <thead class="thead-dark">
+                  <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Post One</td>
+                    <td>Web Development</td>
+                    <td>July 25, 1974</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary btn-sm">
+                        <i class="fas fa-angle-double-right"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Post Two</td>
+                    <td>Web Development</td>
+                    <td>July 25, 1974</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary btn-sm">
+                        <i class="fas fa-angle-double-right"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Post Three</td>
+                    <td>Web Development</td>
+                    <td>July 25, 1974</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary btn-sm">
+                        <i class="fas fa-angle-double-right"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Post Four</td>
+                    <td>Web Development</td>
+                    <td>July 25, 1974</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary btn-sm">
+                        <i class="fas fa-angle-double-right"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Post Five</td>
+                    <td>Web Development</td>
+                    <td>July 25, 1974</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary btn-sm">
+                        <i class="fas fa-angle-double-right"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Post Six</td>
+                    <td>Web Development</td>
+                    <td>July 25, 1974</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary btn-sm">
+                        <i class="fas fa-angle-double-right"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card bg-primary text-white text-center mb-3">
+              <div class="card-body">
+                <h3>Posts</h3>
+                <h4 class="display-4"><i class="fas fa-pencil-alt"></i> 6</h4>
+                <a href="posts.html" class="btn btn-outline-light btn-sm">
+                  View
+                </a>
+              </div>
+            </div>
+            <div class="card bg-success text-white text-center mb-3">
+              <div class="card-body">
+                <h3>Categories</h3>
+                <h4 class="display-4"><i class="fas fa-folder"></i> 4</h4>
+                <a href="categories.html" class="btn btn-outline-light btn-sm">
+                  View
+                </a>
+              </div>
+            </div>
+            <div class="card bg-warning text-white text-center mb-3">
+              <div class="card-body">
+                <h3>Users</h3>
+                <h4 class="display-4"><i class="fas fa-users"></i> 2</h4>
+                <a href="users.html" class="btn btn-outline-light btn-sm">
+                  View
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- FOOTER -->
-    <footer></footer>
+    <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="lead text-center">
+              Copyright &copy;<span id="year"></span> Blogen
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- BODY END -->
     <script src="assets/scripts/jquery-3.4.1.min.js"></script>
