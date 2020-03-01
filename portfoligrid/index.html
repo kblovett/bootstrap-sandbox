@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Portfoligrid</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="container">
+      <header id="main-header">
+        <div class="row no-gutters">
+          <div class="col-lg-4 col-md-5">
+            <img src="./assets/img/person1.jpg" alt="" />
+          </div>
+          <div class="col-lg-8 col-md-7">
+            <div class="d-flex flex-column">
+              <div class="bg-dark text-white p-5">
+                <div
+                  class="d-flex flex-row justify-content-between align-items-center"
+                >
+                  <h1 class="display-4">John Doe</h1>
+                  <div class="d-none d-md-block">
+                    <a href="https://www.facebook.com" class="text-white">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="https://www.linkedin.com" class="text-white">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="https://www.github.com" class="text-white">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="https://www.twitter.com" class="text-white">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-black p-4">
+                Experienced Full-Stack Web Developer
+              </div>
+              <div>
+                <div
+                  class="d-flex flex-row text-white text-center align-items-stretch"
+                >
+                  <div
+                    class="port-item bg-primary p-4"
+                    data-toggle="collapse"
+                    data-target="#home"
+                  >
+                    <i class="fas fa-home fa-2x d-block"></i>
+                    <span class="d-none d-sm-block">Home</span>
+                  </div>
+                  <div
+                    class="port-item bg-success p-4"
+                    data-toggle="collapse"
+                    data-target="#resume"
+                  >
+                    <i class="fas fa-graduation-cap fa-2x d-block"></i>
+                    <span class="d-none d-sm-block">Resume</span>
+                  </div>
+                  <div
+                    class="port-item bg-warning p-4"
+                    data-toggle="collapse"
+                    data-target="#work"
+                  >
+                    <i class="fas fa-folder-open fa-2x d-block"></i>
+                    <span class="d-none d-sm-block">Work</span>
+                  </div>
+                  <div
+                    class="port-item bg-danger p-4"
+                    data-toggle="collapse"
+                    data-target="#contact"
+                  >
+                    <i class="fas fa-envelope fa-2x d-block"></i>
+                    <span class="d-none d-sm-block">Contact</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- BODY END -->
+    <script src="assets/scripts/jquery-3.4.1.min.js"></script>
+    <script src="assets/scripts/bootstrap.bundle.min.js"></script>
+    <script>
+      // Get the current year for the copyright
+      $('#year').text(new Date().getFullYear());
+    </script>
+  </body>
+</html>
