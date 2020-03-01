@@ -16,7 +16,7 @@
     >
       <div class="container">
         <a href="index.html" class="navbar-brand">Bloggen</a>
-        <button
+        <!-- <button
           class="navbar-toggler"
           data-toggle="collapse"
           data-target="#navbarCollapse"
@@ -26,7 +26,7 @@
         <div id="navbarCollapse" class="navbar-collapse collapse">
           <ul class="navbar-nav">
             <li class="nav-item px-2">
-              <a href="index.html" class="nav-link">Dashboard</a>
+              <a href="index.html" class="nav-link active">Dashboard</a>
             </li>
             <li class="nav-item px-2">
               <a href="posts.html" class="nav-link">Posts</a>
@@ -62,7 +62,7 @@
             </li>
             <li class="nav-item px-2"><a href="" class="nav-link"></a></li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </nav>
 
@@ -71,7 +71,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <h1>Post One</h1>
+            <h1><i class="fas fa-key"></i> Blogen Admin</h1>
           </div>
         </div>
       </div>
@@ -80,66 +80,67 @@
     <!-- ACTIONS SECTION -->
     <section id="actions" class="bg-light py-4 mb-4">
       <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <a href="index.html" class="btn btn-light text-primary btn-block">
-              <i class="fas fa-arrow-left"></i> Back to Dashboard
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="index.html" class="btn btn-success btn-block">
-              <i class="fas fa-check"></i> Save Changes
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="index.html" class="btn btn-danger text-white btn-block">
-              <i class="fas fa-trash"></i> Delete Post
-            </a>
-          </div>
-        </div>
+        <div class="row"></div>
       </div>
     </section>
 
-    <!-- DETAILS SECTION -->
-    <section id="details">
+    <!-- LOGIN SECTION -->
+    <section id="login">
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-md-6 mx-auto">
             <div class="card">
-              <div class="card-header">Edit Post</div>
+              <div class="card-header">
+                <h4>Account Login</h4>
+              </div>
               <div class="card-body">
-                <form>
+                <form action="index.html">
                   <div class="form-group">
-                    <label for="title">Title</label>
-                    <input type="text" class="form-control" value="Post One" />
+                    <label for="name">
+                      Name
+                    </label>
+                    <input
+                      id="name"
+                      name="name"
+                      type="text"
+                      class="form-control"
+                      value="Django Cat"
+                    />
                   </div>
                   <div class="form-group">
-                    <label for="category">Category</label>
-                    <select class="form-control">
-                      <option value="" selected>Web Development</option>
-                      <option value="">Tech Gadgets</option>
-                      <option value="">Business</option>
-                      <option value="">Health & Wellness</option>
-                    </select>
+                    <label for="email">
+                      Email
+                    </label>
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      class="form-control"
+                      value="djcat@meow.com"
+                    />
                   </div>
-                  <div class="form-group">
-                    <label for="image">Upload Image</label>
-                    <div class="custom-file">
-                      <input type="file" id="image" class="custom-file-input" />
-                      <label for="image" class="custom-file-label"
-                        >Choose file</label
-                      >
-                    </div>
-                    <small class="form-text text-muted">Max Size 3mb</small>
-                  </div>
-                  <div class="form-group">
-                    <label for="body">Body</label>
-                    <textarea id="editor1">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ab.
-                    </textarea>
+                  <div class="d-flex float-right">
+                    <input
+                      type="submit"
+                      value="Submit"
+                      class="btn btn-primary"
+                    />
+                    <input
+                      type="reset"
+                      value="Cancel"
+                      class="btn btn-danger ml-2"
+                    />
                   </div>
                 </form>
               </div>
+              <!-- <div class="card-footer">
+                <div class="d-flex float-right">
+                  <button type="submit" class="btn btn-primary mr-2">
+                    Submit
+                  </button>
+                  <button type="reset" class="btn btn-danger">Cancel</button>
+                </div>
+              </div> -->
             </div>
           </div>
         </div>
